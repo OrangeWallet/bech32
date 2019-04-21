@@ -1,5 +1,5 @@
 name: bip_bech32
-version: 0.1.2
+version: 0.1.3
 author: "BaojunCZ<baojun.cz@gmail.com>"
 homepage: https://github.com/OrangeWallet/bech32.git
 description: Dart implementing BIP173,Convert fron bitcoinj.
