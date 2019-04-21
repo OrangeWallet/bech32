@@ -30,7 +30,7 @@ class Bech32Encoder extends Converter<Bech32, String> {
   String convert(Bech32 input) {
     String hrp = input.hrp;
     Uint8List data = input.data;
-    if (hrp.length < 1) throw TooShortHumanReadable(hrp.length);
+    if (hrp.isEmpty) throw TooShortHumanReadable(hrp.length);
     if (input.hrp.length > 83) throw TooLongHumanReadable(hrp.length);
     hrp = hrp.toLowerCase();
     Uint8List checksummed =
